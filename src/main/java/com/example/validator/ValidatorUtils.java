@@ -1,13 +1,12 @@
 package com.example.validator;
 
+
 import com.example.validator.Exeption.WrongLoginException;
 import com.example.validator.Exeption.WrongPasswordException;
-import org.springframework.stereotype.Service;
 
 import java.util.regex.Pattern;
 
-@Service
-public class ValidatorServiceImpl {
+public class ValidatorUtils {
 
     private static final Pattern RESTRICTION = Pattern.compile("\\w{0,20}$");
 
